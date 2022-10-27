@@ -5,7 +5,7 @@ python manage.py collectstatic --noinput
 
 
 echo "Apply database migrations"
-python manage.py makemigrations api
+python manage.py makemigrations app
 python manage.py migrate
 
 echo "Starting server"
