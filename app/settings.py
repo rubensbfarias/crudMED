@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'app.apps.config',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -129,3 +130,21 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# JAZZMIN SETTINGS
+
+JAZZMIN_SETTINGS = { 
+    "site_title": "MedicalSys - Admin",
+    "site_header": "MedicalSys - Painel",
+    "site_logo": "https://i.imgur.com/iiFH4Oz.png",
+    "welcome_sign": "MedicalSys - Painel",
+    "copyright": "MedicalSys Todos os direitos reservados",
+    "topmenu_links": [
+        {"name": "Inicio",  "url": "admin:index", "permissions": ["auth.view_user"]},
+         {"name": "Agendamento", "url": "http://127.0.0.1:8000/app/scheduling/", "new_window": True},
+        ],
+
+    
+
+}
