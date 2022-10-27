@@ -1,8 +1,6 @@
 from rest_framework import viewsets
-
 from api.serializers import UserSerializer, PatientSerializer, SchedulingSerializer
 from api.models import User, Patient, Scheduling
-
 
 class UserViewSet(viewsets.ModelViewSet):
    queryset = User.objects.all()

@@ -26,5 +26,5 @@ router.register(r'patients', PatientViewSet)
 router.register(r'schedulings', SchedulingViewSet)
 
 urlpatterns = [
-    path('/api', include(router.urls)),
+    path('api/', include(router.urls)),
 ]
