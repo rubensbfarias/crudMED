@@ -137,14 +137,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 JAZZMIN_SETTINGS = { 
     "site_title": "MedicalSys - Admin",
     "site_header": "MedicalSys - Painel",
-    "site_logo": "https://i.imgur.com/iiFH4Oz.png",
+    "site_logo": "logo.png",
+    "login_logo": None,
+    "site_logo_classes": "img-circle",
+    "site_icon": None,
     "welcome_sign": "MedicalSys - Painel",
     "copyright": "MedicalSys Todos os direitos reservados",
     "topmenu_links": [
         {"name": "Inicio",  "url": "admin:index", "permissions": ["auth.view_user"]},
          {"name": "Agendamento", "url": "http://127.0.0.1:8000/app/scheduling/", "new_window": True},
         ],
-
     
-
 }
