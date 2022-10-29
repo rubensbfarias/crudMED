@@ -5,3 +5,4 @@ markdown==3.4.1
 django-filter==22.1
 django-debug-toolbar==3.5.0
 django-jazzmin
+dj-database-url
