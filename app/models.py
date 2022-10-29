@@ -21,7 +21,7 @@ class Patient(models.Model):
     city = models.CharField(max_length=100)
     uf = models.CharField(max_length=100)
     country = models.CharField(max_length=100)
-    #CEP = models.CharField(max_length=100)
+    cep = models.CharField(max_length=100)
     createat = models.DateTimeField()
     def __str__(self):
        return self.name
